@@ -5,7 +5,7 @@
     box-sizing: border-box !important;
     font-weight: lighter ;
     font-family: 'Kalam', cursive;
-    transition: 1.8s ;
+    transition: 0.8s !important ;
     
 }
 
@@ -73,7 +73,7 @@ body{
 
 .wrapper{
     width: 350px;
-    height: 75vh;
+    height: 650px;
     background-color: #22252D;
     border-radius: 15px;
     box-shadow: 19px 11px 18px -10px rgba(6,7,9,0.49);
@@ -127,7 +127,7 @@ body{
     padding: 5px 5px !important;
     margin: 0 auto;
     cursor: pointer;
-    /* border: ghostwhite 1px solid; */
+     /* border: ghostwhite 1px solid; */
     font-size: 20px;
     background: rgb(41,45,54);
     background: linear-gradient(90deg, rgba(41,45,54,1) 0%, rgba(34,37,45,1) 100%);
@@ -163,11 +163,14 @@ body{
     padding: 0 !important;
     background-color: #292D36;
     width: 100% !important;
+    height: 65%;
     padding: 10px 20px !important;
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
     border-bottom-left-radius: 15px !important;
     border-bottom-right-radius: 15px !important;
+    position:absolute;
+    bottom: 0;
     
 }
 
@@ -181,17 +184,37 @@ body{
 
 
 .display-screen{
-    height: 200px !important;
-    position:relative;
+    height: 35% ;
+    position:absolute;
     color: white;
-    bottom: 0;
+    top: 0;
+    width: 100%;
+    /* border: 1px solid white; */
 }
 
 .text-screen{
     padding: 10px;
-    position: absolute;;
+    position: absolute;
     color: white;
     bottom: 0;
     right: 0;
     font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper{
+        width: 300px;
+        height: 600px;
+        margin-top: 50px;
+    }
+
+    .num-section{
+        margin-top: 15px;
+        
+    }
+
+    .num{
+        font-size: 15px;
+    }
+
 }

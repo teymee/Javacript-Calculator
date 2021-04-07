@@ -10,13 +10,25 @@ const DOM = {
 
 //TOGGLE DARK AND LIGHT MODE
 
+let mode = localStorage.getItem("mode")
 DOM.lightMode.addEventListener("click", () => {
   console.log(document.body.classList.add("light"));
+  localStorage.setItem("mode", "light")
 });
 
 DOM.darkMode.addEventListener("click", () => {
   console.log(document.body.classList.remove("light"));
+  localStorage.setItem("mode", " ")
 });
+
+window.addEventListener("load", ()=>{
+    if(mode == "light"){
+        document.body.classList.add("light")
+    }else{
+        document.body.classList.remove("light")
+    }
+    
+})
 
 //LOGIC
 var finalInputs = ["start"];
@@ -49,7 +61,7 @@ var addToFinalInputs = (input) => {
   calculation(finalInputs);
 };
 
-//Clear "CLR" button function
+//Clear "Del" button function
 DOM.clear.addEventListener("click", () => {
   finalInputs.pop(finalInputs[finalInputs.length - 1]);
   calculation(finalInputs);
@@ -106,7 +118,7 @@ for (let i = 0; i < DOM.buttons.length; i++) {
     currentInputs = [];
     console.log(finalInputs)
 
-    if (input !== "CLR " && !input.includes("=")) {
+    if (input !== "Del " && !input.includes("=")) {
       if (input == "AC") {
         DOM.question.textContent = "";
         finalInputs = [];
@@ -116,6 +128,8 @@ for (let i = 0; i < DOM.buttons.length; i++) {
         class Number {
           constructor(number) {
             this.number = number;
+            
+            
             if (number === "^") {
               this.math = "**";
             } else if (number === "√(") {
@@ -126,10 +140,6 @@ for (let i = 0; i < DOM.buttons.length; i++) {
               this.math = "Math.log10(";
             } else if (number === "x") {
               this.math = "*";
-            } else if (number === "AC") {
-              this.math = "";
-              this.Number = "";
-              finalInputs = [];
             } else if (number === "=") {
               this.math = "";
               this.Number = "";
