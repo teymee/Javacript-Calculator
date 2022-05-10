@@ -121,6 +121,20 @@ body{
 }
 
 
+.created-text{
+text-align: center;
+color:  white;
+position: absolute;
+bottom: 0;
+left: 45%;
+padding-bottom: 20px;
+}
+
+.light .created-text{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    }
 
 
 .num{
@@ -217,4 +231,19 @@ body{
         font-size: 15px;
     }
 
+      .created-text{
+        text-align: center;
+        color:  white;
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%);
+        padding-bottom: 20px;
+        }
+        
+        .light .created-text{
+            text-align: center;
+            color: black;
+            font-weight: lighter;
+            }
 }
