@@ -120,8 +120,22 @@ body{
     padding: 6px 6px !important; 
 }
 
+.created-text{
+text-align: center;
+color:  white;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%);
+padding-bottom: 20px;
+}
 
-
+.light .created-text{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    }
+    
 
 .num{
     padding: 5px 5px !important;
@@ -216,5 +230,21 @@ body{
     .num{
         font-size: 15px;
     }
+
+    .created-text{
+        text-align: center;
+        color:  white;
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%);
+        padding-bottom: 20px;
+        }
+        
+        .light .created-text{
+            text-align: center;
+            color: black;
+            font-weight: lighter;
+            }
 
 }

@@ -124,6 +124,8 @@ for (let i = 0; i < DOM.buttons.length; i++) {
         finalInputs = [];
       }
 
+
+
       if (finalInputs.length > 0 && input !== "AC") {
         class Number {
           constructor(number) {
