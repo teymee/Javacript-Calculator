@@ -130,12 +130,29 @@ transform: translate(-50%);
 padding-bottom: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.created-text{
+text-align: center;
+color:  white;
+position: absolute;
+bottom: 0;
+left: 50%;
+     transform: translate(-50%);
+padding-bottom: 20px;
+}
+
+>>>>>>> ef0913c8b4dfcc25aaa805152ce204b74e5602ef
 .light .created-text{
     text-align: center;
     color: black;
     font-weight: bold;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> ef0913c8b4dfcc25aaa805152ce204b74e5602ef
 
 .num{
     padding: 5px 5px !important;
@@ -231,7 +248,11 @@ padding-bottom: 20px;
         font-size: 15px;
     }
 
+<<<<<<< HEAD
     .created-text{
+=======
+      .created-text{
+>>>>>>> ef0913c8b4dfcc25aaa805152ce204b74e5602ef
         text-align: center;
         color:  white;
         position: absolute;
@@ -246,5 +267,9 @@ padding-bottom: 20px;
             color: black;
             font-weight: lighter;
             }
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> ef0913c8b4dfcc25aaa805152ce204b74e5602ef
