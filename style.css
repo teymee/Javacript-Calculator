@@ -130,8 +130,6 @@ transform: translate(-50%);
 padding-bottom: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .created-text{
 text-align: center;
 color:  white;
@@ -142,17 +140,13 @@ left: 50%;
 padding-bottom: 20px;
 }
 
->>>>>>> ef0913c8b4dfcc25aaa805152ce204b74e5602ef
 .light .created-text{
     text-align: center;
     color: black;
     font-weight: bold;
     }
-<<<<<<< HEAD
     
-=======
 
->>>>>>> ef0913c8b4dfcc25aaa805152ce204b74e5602ef
 
 .num{
     padding: 5px 5px !important;
